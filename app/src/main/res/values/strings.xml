@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Dashboard</string>
+    <string name="title_home">Home</string>
+    <string name="title_budget_personnelle">Budget Personnelle</string>
+    <string name="title_budget_group">Budget De Groupe</string>
+    <string name="title_taches">Taches De Groupe</string>
+</resources>
