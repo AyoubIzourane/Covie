@@ -4,7 +4,10 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -17,8 +20,14 @@ import com.example.dashboard.databinding.FragmentHomeBinding;
 
 public class HomeFragment extends Fragment {
 
+
+    int[] images = {R.drawable.profil2,R.drawable.profil3,R.drawable.profil4,R.drawable.profil5,R.drawable.profil2,R.drawable.profil6};
+
+    String[] names = {"Mounir Aithmed", "Mouad Ahatour", "Anass Ouhammi", "Khalid Boutaib", "Mohammed Karim", "Ali Benabdellah",};
+
     private HomeViewModel homeViewModel;
     private FragmentHomeBinding binding;
+
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -35,6 +44,13 @@ public class HomeFragment extends Fragment {
                 textView.setText(s);
             }
         });
+
+        ListView lView = (ListView) root.findViewById(R.id.List);
+
+        ListAdapter lAdapter = new ListAdapter(getActivity(), names, images);
+
+        lView.setAdapter(lAdapter);
+
         return root;
     }
 
@@ -43,4 +59,8 @@ public class HomeFragment extends Fragment {
         super.onDestroyView();
         binding = null;
     }
+
+
+
+
 }
