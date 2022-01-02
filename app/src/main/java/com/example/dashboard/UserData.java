@@ -1,12 +1,12 @@
 package com.example.dashboard;
 
 public class UserData {
-    public String nom,prenom,EmailId;
+    public String nom,prenom,email;
     public UserData(){
     }
-    public UserData(String nom, String prenom,String EmailId) {
+    public UserData(String nom, String prenom,String email) {
         nom = this.nom;
         prenom = this.prenom;
-        EmailId=this.EmailId;
+        email=this.email;
     }
 }

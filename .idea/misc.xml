@@ -6,16 +6,19 @@
         <entry key="..\:/Users/ayoub/AndroidStudioProjects/Dashboard/app/src/main/res/drawable/border_shadow.xml" value="0.24114583333333334" />
         <entry key="..\:/Users/ayoub/AndroidStudioProjects/Dashboard/app/src/main/res/drawable/rounded_corner.xml" value="0.24114583333333334" />
         <entry key="..\:/Users/ayoub/AndroidStudioProjects/Dashboard/app/src/main/res/drawable/theme.xml" value="0.24114583333333334" />
+        <entry key="..\:/Users/ayoub/AndroidStudioProjects/Dashboard/app/src/main/res/layout/activity_edit.xml" value="0.22083333333333333" />
         <entry key="..\:/Users/ayoub/AndroidStudioProjects/Dashboard/app/src/main/res/layout/activity_forgot_password.xml" value="0.22083333333333333" />
         <entry key="..\:/Users/ayoub/AndroidStudioProjects/Dashboard/app/src/main/res/layout/activity_login.xml" value="0.22083333333333333" />
         <entry key="..\:/Users/ayoub/AndroidStudioProjects/Dashboard/app/src/main/res/layout/activity_main.xml" value="0.22083333333333333" />
         <entry key="..\:/Users/ayoub/AndroidStudioProjects/Dashboard/app/src/main/res/layout/activity_new_account.xml" value="0.22" />
         <entry key="..\:/Users/ayoub/AndroidStudioProjects/Dashboard/app/src/main/res/layout/circleimage.xml" value="0.1078125" />
         <entry key="..\:/Users/ayoub/AndroidStudioProjects/Dashboard/app/src/main/res/layout/fragment_budget_group.xml" value="0.1078125" />
+        <entry key="..\:/Users/ayoub/AndroidStudioProjects/Dashboard/app/src/main/res/layout/fragment_budget_personnelle.xml" value="0.1824074074074074" />
         <entry key="..\:/Users/ayoub/AndroidStudioProjects/Dashboard/app/src/main/res/layout/fragment_dashboard.xml" value="0.22083333333333333" />
-        <entry key="..\:/Users/ayoub/AndroidStudioProjects/Dashboard/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Users/ayoub/AndroidStudioProjects/Dashboard/app/src/main/res/layout/fragment_home.xml" value="0.22" />
         <entry key="..\:/Users/ayoub/AndroidStudioProjects/Dashboard/app/src/main/res/layout/fragment_notifications.xml" value="0.22083333333333333" />
         <entry key="..\:/Users/ayoub/AndroidStudioProjects/Dashboard/app/src/main/res/layout/fragment_taches.xml" value="0.22083333333333333" />
+        <entry key="..\:/Users/ayoub/AndroidStudioProjects/Dashboard/app/src/main/res/layout/item.xml" value="0.22083333333333333" />
         <entry key="..\:/Users/ayoub/AndroidStudioProjects/Dashboard/app/src/main/res/layout/rectangle.xml" value="0.1078125" />
         <entry key="..\:/Users/ayoub/AndroidStudioProjects/Dashboard/app/src/main/res/layout/single_list_item.xml" value="0.22083333333333333" />
         <entry key="..\:/Users/ayoub/AndroidStudioProjects/Dashboard/app/src/main/res/menu/bottom_nav_menu.xml" value="0.22083333333333333" />

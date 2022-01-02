@@ -23,6 +23,18 @@ public class ForgotPasswordActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forgot_password);
+
+        //Button retour
+        Button btn_back = (Button) findViewById(R.id.back);
+        btn_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Login.class);
+                startActivity(intent);
+            }
+        });
+
+
         //        get all view id from XML
         edit_txt_resetEmail = findViewById(R.id.reset_email);
         button_resetPassword = findViewById(R.id.reinitialiser);

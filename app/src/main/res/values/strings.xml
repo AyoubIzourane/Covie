@@ -4,4 +4,34 @@
     <string name="title_budget_personnelle">Budget Personnelle</string>
     <string name="title_budget_group">Budget De Groupe</string>
     <string name="title_taches">Taches De Groupe</string>
+
+
+    //Budget Personnelle
+    <array name="idimages">
+        <item>@drawable/tel1</item>
+        <item>@drawable/tel2</item>
+        <item>@drawable/tel3</item>
+        <item>@drawable/tel4</item>
+        <item>@drawable/tel5</item>
+
+    </array>
+    <string-array name="intitules">
+        <item>Home</item>
+        <item>Groceries</item>
+        <item>Transport</item>
+        <item>Sport</item>
+        <item>Autre</item>
+
+
+    </string-array>
+    <string-array name="prix">
+        <item>500.00</item>
+        <item>650.00</item>
+        <item>250.00</item>
+        <item>250.00</item>
+        <item>330.00</item>
+
+
+    </string-array>
+
 </resources>
