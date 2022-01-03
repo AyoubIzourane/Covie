@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "1045176553767",
-    "project_id": "colocataire-936c3",
-    "storage_bucket": "colocataire-936c3.appspot.com"
+    "project_number": "247538278974",
+    "project_id": "covie-4e086",
+    "storage_bucket": "covie-4e086.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1045176553767:android:96dc8fbf0dd22159871902",
+        "mobilesdk_app_id": "1:247538278974:android:a5051e6ea49a2998a6276f",
         "android_client_info": {
-          "package_name": "com.example.dashboard"
+          "package_name": "com.example.colocataire_app"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1045176553767-889gst2it09s5ffa89vn7u1ci00aguag.apps.googleusercontent.com",
+          "client_id": "247538278974-cmpkvisls6kdh2uree0vis7lch7ulv2i.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBzYS7uGNzIMHiHZE0fL223KqrZa34L6Sc"
+          "current_key": "AIzaSyBPSWkYmmfZlY4SeHQzflTYh54WBShxGRU"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1045176553767-889gst2it09s5ffa89vn7u1ci00aguag.apps.googleusercontent.com",
+              "client_id": "247538278974-cmpkvisls6kdh2uree0vis7lch7ulv2i.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
