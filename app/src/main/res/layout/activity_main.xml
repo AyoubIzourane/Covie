@@ -174,23 +174,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4"
         app:layout_constraintVertical_bias="0.356" />
 
-    <ImageButton
-        android:id="@+id/logout"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
 
-        android:outlineSpotShadowColor="@color/black"
-        android:src="@drawable/ic_baseline_power_settings_new_24"
-        android:alpha="0.8"
-
-        android:background="@drawable/rounded_corner"
-
-        android:layout_marginRight="-5dp"
-        android:layout_marginTop="-6dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/profile_image"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <View
         android:id="@+id/view3"
@@ -200,6 +184,60 @@
         app:layout_constraintBottom_toBottomOf="@+id/viewup"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/budget_group"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="244dp"
+        android:background="@drawable/rounded_corner"
+        android:outlineSpotShadowColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/logout"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_baseline_group_24"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/budget_personnelle"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="132dp"
+        android:background="@drawable/rounded_corner"
+        android:outlineSpotShadowColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_baseline_attach_money_24"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/home"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/rounded_corner"
+        android:outlineSpotShadowColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_home_black_24dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/logout"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="-5dp"
+        android:background="@drawable/rounded_corner"
+        android:outlineSpotShadowColor="@color/black"
+        android:src="@drawable/ic_baseline_power_settings_new_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

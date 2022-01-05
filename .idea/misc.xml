@@ -9,9 +9,11 @@
         <entry key="..\:/Users/ayoub/AndroidStudioProjects/colocataire_app/app/src/main/res/drawable/ic_baseline_power_settings_new_24.xml" value="0.24114583333333334" />
         <entry key="..\:/Users/ayoub/AndroidStudioProjects/colocataire_app/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.24114583333333334" />
         <entry key="..\:/Users/ayoub/AndroidStudioProjects/colocataire_app/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.24114583333333334" />
+        <entry key="..\:/Users/ayoub/AndroidStudioProjects/colocataire_app/app/src/main/res/drawable/ic_launcher_background.xml" value="0.24114583333333334" />
         <entry key="..\:/Users/ayoub/AndroidStudioProjects/colocataire_app/app/src/main/res/drawable/ic_menu_camera.xml" value="0.24114583333333334" />
         <entry key="..\:/Users/ayoub/AndroidStudioProjects/colocataire_app/app/src/main/res/drawable/ic_menu_slideshow.xml" value="0.24114583333333334" />
         <entry key="..\:/Users/ayoub/AndroidStudioProjects/colocataire_app/app/src/main/res/layout/activity_dashboard.xml" value="0.225" />
+        <entry key="..\:/Users/ayoub/AndroidStudioProjects/colocataire_app/app/src/main/res/layout/activity_edit.xml" value="0.225" />
         <entry key="..\:/Users/ayoub/AndroidStudioProjects/colocataire_app/app/src/main/res/layout/activity_forgot_password.xml" value="0.22083333333333333" />
         <entry key="..\:/Users/ayoub/AndroidStudioProjects/colocataire_app/app/src/main/res/layout/activity_login.xml" value="0.22083333333333333" />
         <entry key="..\:/Users/ayoub/AndroidStudioProjects/colocataire_app/app/src/main/res/layout/activity_main.xml" value="0.23043478260869565" />
@@ -21,6 +23,7 @@
         <entry key="..\:/Users/ayoub/AndroidStudioProjects/colocataire_app/app/src/main/res/layout/fragment_gallery.xml" value="0.225" />
         <entry key="..\:/Users/ayoub/AndroidStudioProjects/colocataire_app/app/src/main/res/layout/fragment_home.xml" value="0.225" />
         <entry key="..\:/Users/ayoub/AndroidStudioProjects/colocataire_app/app/src/main/res/layout/fragment_slideshow.xml" value="0.225" />
+        <entry key="..\:/Users/ayoub/AndroidStudioProjects/colocataire_app/app/src/main/res/layout/item.xml" value="0.225" />
         <entry key="..\:/Users/ayoub/AndroidStudioProjects/colocataire_app/app/src/main/res/layout/nav_header_dashboard.xml" value="0.225" />
         <entry key="..\:/Users/ayoub/AndroidStudioProjects/colocataire_app/app/src/main/res/layout/single_list_item.xml" value="0.1078125" />
         <entry key="..\:/Users/ayoub/AndroidStudioProjects/colocataire_app/app/src/main/res/menu/activity_main_drawer.xml" value="0.225" />
