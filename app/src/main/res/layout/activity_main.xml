@@ -44,6 +44,22 @@
         app:layout_constraintStart_toStartOf="@+id/profile_image"
         app:layout_constraintTop_toBottomOf="@+id/profile_image" />
 
+    <ImageButton
+        android:id="@+id/logout"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="-10dp"
+        android:layout_marginTop="-5dp"
+        android:background="@drawable/rounded_corner"
+        android:outlineSpotShadowColor="@color/black"
+        android:src="@drawable/ic_baseline_power_settings_new_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
     <View
         android:id="@+id/view6"
         android:layout_width="match_parent"
@@ -61,33 +77,66 @@
         app:layout_constraintVertical_bias="0.032"
         tools:ignore="MissingConstraints" />
 
+
+    <ImageButton
+        android:id="@+id/budget_personnelle"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:padding="10dp"
+        android:scaleType="fitCenter"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/budget_group"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view6"
+        app:srcCompat="@drawable/budget" />
+
+
+    <ImageButton
+        android:id="@+id/budget_group"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:padding="10dp"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/budget_personnelle"
+        app:layout_constraintTop_toBottomOf="@+id/view6"
+        app:srcCompat="@drawable/budget_grp" />
+
     <ListView
         android:id="@+id/List"
-        android:layout_width="match_parent"
-        android:layout_height="223dp"
+        android:layout_width="356dp"
+        android:layout_height="300dp"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="30dp"
         android:background="@drawable/rounded_corner"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ListLabel"
-        app:layout_constraintVertical_bias="0.309" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/ListLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="28dp"
         android:text="Liste des colocataires"
         android:textColor="@color/white"
         android:textSize="22dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.081"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view6"
+        app:layout_constraintTop_toBottomOf="@+id/budget_personnelle"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -176,68 +225,9 @@
 
 
 
-    <View
-        android:id="@+id/view3"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:background="@color/black"
-        app:layout_constraintBottom_toBottomOf="@+id/viewup"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageButton
-        android:id="@+id/budget_group"
-        android:layout_width="60dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="244dp"
-        android:background="@drawable/rounded_corner"
-        android:outlineSpotShadowColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/logout"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/ic_baseline_group_24"
-        tools:ignore="MissingConstraints" />
 
-    <ImageButton
-        android:id="@+id/budget_personnelle"
-        android:layout_width="60dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="132dp"
-        android:background="@drawable/rounded_corner"
-        android:outlineSpotShadowColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
 
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/ic_baseline_attach_money_24"
-        tools:ignore="MissingConstraints" />
-
-    <ImageButton
-        android:id="@+id/home"
-        android:layout_width="60dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="4dp"
-        android:background="@drawable/rounded_corner"
-        android:outlineSpotShadowColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/ic_home_black_24dp"
-        tools:ignore="MissingConstraints" />
-
-    <ImageButton
-        android:id="@+id/logout"
-        android:layout_width="60dp"
-        android:layout_height="50dp"
-        android:layout_marginRight="-5dp"
-        android:background="@drawable/rounded_corner"
-        android:outlineSpotShadowColor="@color/black"
-        android:src="@drawable/ic_baseline_power_settings_new_24"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
