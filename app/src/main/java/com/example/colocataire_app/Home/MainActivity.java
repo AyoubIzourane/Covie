@@ -5,13 +5,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ListView;
-import android.widget.TextView;
 
+import com.example.colocataire_app.BudgetPersonnelle.BudgetPersonnelleActivity;
 import com.example.colocataire_app.Login;
-import com.example.colocataire_app.NewAccount;
 import com.example.colocataire_app.R;
 
 public class MainActivity extends AppCompatActivity {
@@ -32,6 +30,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), Login.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton btn_budget_personnelle = (ImageButton) findViewById(R.id.budget_personnelle);
+        btn_budget_personnelle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), BudgetPersonnelleActivity.class);
                 startActivity(intent);
             }
         });
