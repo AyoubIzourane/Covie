@@ -79,6 +79,7 @@
         android:backgroundTint="#A3ABBC"
         android:ems="10"
         android:hint="Adresse email"
+        android:inputType="textWebEmailAddress"
         android:paddingStart="15dp"
         android:paddingBottom="16dp"
         android:textColor="#FFFFFF"

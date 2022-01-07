@@ -76,7 +76,8 @@ public class NewAccount extends AppCompatActivity {
                                 public void onComplete(@NonNull Task<AuthResult> task) {
                                     if (task.isSuccessful()) {
                                         UserData data = new UserData(firstName, lastName, email);
-                                        FirebaseDatabase.getInstance().getReference("UserData").child(FirebaseAuth.getInstance().getCurrentUser().getUid()).setValue(data).
+                                        FirebaseDatabase.getInstance().getReference("UserData")
+                                                .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).setValue(data).
                                                 addOnCompleteListener(new OnCompleteListener<Void>() {
                                                     @Override
                                                     public void onComplete(@NonNull Task<Void> task) {

@@ -5,8 +5,11 @@ public class UserData {
     public UserData(){
     }
     public UserData(String nom, String prenom,String email) {
-        nom = this.nom;
-        prenom = this.prenom;
-        email=this.email;
+        this.nom=nom;
+        this.prenom=prenom;
+        this.email=email;
+    }
+    public String getNom(){
+        return nom;
     }
 }
