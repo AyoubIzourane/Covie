@@ -1,6 +1,5 @@
 package com.example.colocataire_app;
 
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -24,6 +23,8 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+
+        //button forget password
         TextView btn_forgot_password = (TextView) findViewById(R.id.forgotpassword);
         btn_forgot_password.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,6 +34,7 @@ public class Login extends AppCompatActivity {
             }
         });
 
+        //Connection using email and password
         user_name=findViewById(R.id.email);
         pass_word=findViewById(R.id.password);
         Button btn_login = findViewById(R.id.login);
@@ -79,6 +81,8 @@ public class Login extends AppCompatActivity {
 
             });
         });
+
+        //Button registration for new users
         btn_sign.setOnClickListener(v -> startActivity(new Intent(Login.this,NewAccount.class )));
     }
 }

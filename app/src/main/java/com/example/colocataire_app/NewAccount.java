@@ -19,9 +19,9 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+//this class used to create new acccount where user needs to put his information (for registration)
 
 public class NewAccount extends AppCompatActivity {
-
 
     private EditText edit_txt_prenom, edit_txt_nom, edit_txt_Email, edit_txt_Pass, edit_txt_CoPass;
     private Button button_register;
@@ -46,7 +46,7 @@ public class NewAccount extends AppCompatActivity {
             }
         });
 
-        //other partie
+        //Partie Backend (for registration)
 
         edit_txt_prenom = findViewById(R.id.prenom);
         edit_txt_nom = findViewById(R.id.nom);
@@ -55,12 +55,12 @@ public class NewAccount extends AppCompatActivity {
         edit_txt_CoPass = findViewById(R.id.motdepasse2);
 
         button_register = findViewById(R.id.login2);
-        //        Get Firebase auth instance
+        //Get Firebase auth instance
         mAuth = FirebaseAuth.getInstance();
         firebaseDatabase = FirebaseDatabase.getInstance();
         databaseReference = firebaseDatabase.getReference("UserData");
 
-        //        handle user SignUp button
+        //handle user SignUp button
         button_register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -68,8 +68,6 @@ public class NewAccount extends AppCompatActivity {
                     return;
                 }
                 if (password.equals(repeated_password)) {
-                    //    progressbar VISIBLE
-
                     mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener
                             (new OnCompleteListener<AuthResult>() {
                                 @Override
@@ -81,23 +79,19 @@ public class NewAccount extends AppCompatActivity {
                                                 addOnCompleteListener(new OnCompleteListener<Void>() {
                                                     @Override
                                                     public void onComplete(@NonNull Task<Void> task) {
-                                                        //    progressbar GONE
-
-                                                        Toast.makeText(NewAccount.this, "Successful Registered", Toast.LENGTH_SHORT).show();
+                                                        Toast.makeText(NewAccount.this, "Inscription réussie", Toast.LENGTH_SHORT).show();
                                                         Intent intent = new Intent(NewAccount.this, MainActivity.class);
                                                         startActivity(intent);
                                                         finish();
                                                     }
                                                 });
                                     } else {
-                                        //    progressbar GONE
-
-                                        Toast.makeText(NewAccount.this, "Check Email id or Password", Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(NewAccount.this, "Vérifier l'email id ou le mot de passe", Toast.LENGTH_SHORT).show();
                                     }
                                 }
                             });
                 } else {
-                    Toast.makeText(NewAccount.this, "Password didn't match", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(NewAccount.this, "Le mot de passe ne correspond pas", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -105,7 +99,7 @@ public class NewAccount extends AppCompatActivity {
     private boolean validateFirstName() {
         firstName = edit_txt_prenom.getText().toString().trim();
         if (TextUtils.isEmpty(firstName)) {
-            Toast.makeText(NewAccount.this, "Enter Your Full Name", Toast.LENGTH_SHORT).show();
+            Toast.makeText(NewAccount.this, "Enter ton nom", Toast.LENGTH_SHORT).show();
             return false;
         } else {
             return true;
@@ -114,7 +108,7 @@ public class NewAccount extends AppCompatActivity {
     private boolean validateLastName() {
         lastName = edit_txt_nom.getText().toString().trim();
         if (TextUtils.isEmpty(lastName)) {
-            Toast.makeText(NewAccount.this, "Enter Your User Name", Toast.LENGTH_SHORT).show();
+            Toast.makeText(NewAccount.this, "Enter ton prenom", Toast.LENGTH_SHORT).show();
             return false;
         } else {
             return true;
@@ -123,10 +117,11 @@ public class NewAccount extends AppCompatActivity {
     private boolean validateEmail() {
         email = edit_txt_Email.getText().toString().trim();
         if (TextUtils.isEmpty(email)) {
-            Toast.makeText(NewAccount.this, "Enter Your Email", Toast.LENGTH_SHORT).show();
+            Toast.makeText(NewAccount.this, "Enter ton Email", Toast.LENGTH_SHORT).show();
             return false;
         } else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-            Toast.makeText(NewAccount.this, "Please enter valid Email", Toast.LENGTH_SHORT).show();
+            Toast.makeText(NewAccount.this, "Veuillez saisir un e-mail valide\n" +
+                    "\n", Toast.LENGTH_SHORT).show();
             return false;
         } else {
             return true;
@@ -136,22 +131,16 @@ public class NewAccount extends AppCompatActivity {
         password = edit_txt_Pass.getText().toString().trim();
         repeated_password = edit_txt_CoPass.getText().toString().toLowerCase();
         if (TextUtils.isEmpty(password)) {
-            Toast.makeText(NewAccount.this, "Enter Your Password", Toast.LENGTH_SHORT).show();
+            Toast.makeText(NewAccount.this, "Enter ton mot de passe", Toast.LENGTH_SHORT).show();
             return false;
         } else if (TextUtils.isEmpty(repeated_password)) {
             Toast.makeText(NewAccount.this, "Enter Your Co-Password", Toast.LENGTH_SHORT).show();
             return false;
         } else if (password.length() < 6) {
-            Toast.makeText(NewAccount.this, "Password is Very Short", Toast.LENGTH_SHORT).show();
+            Toast.makeText(NewAccount.this, "Le mot de passe est très court", Toast.LENGTH_SHORT).show();
             return false;
         } else {
             return true;
         }
     }
-
-    //    if the user already logged in then it will automatically send on Dashboard/MainActivity activity.
-
-
-
-
 }

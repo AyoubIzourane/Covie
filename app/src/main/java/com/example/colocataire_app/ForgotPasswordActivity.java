@@ -36,11 +36,11 @@ public class ForgotPasswordActivity extends AppCompatActivity {
         });
 
 
-        //        get all view id from XML
+        //get all view id from XML
         edit_txt_resetEmail = findViewById(R.id.reset_email);
         button_resetPassword = findViewById(R.id.reinitialiser);
 
-        //        Get Firebase auth instance
+        //Get Firebase auth instance
         firebaseAuth = FirebaseAuth.getInstance();
         button_resetPassword.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,7 +52,8 @@ public class ForgotPasswordActivity extends AppCompatActivity {
                             public void onComplete(@NonNull Task<Void> task) {
 
                                 if (task.isSuccessful()) {
-                                    Toast.makeText(ForgotPasswordActivity.this, "Password reset link sent to your Email", Toast.LENGTH_LONG).show();
+                                    Toast.makeText(ForgotPasswordActivity.this, "Lien de réinitialisation du mot de passe envoyé à votre adresse e-mail\n" +
+                                            "\n", Toast.LENGTH_LONG).show();
                                     Intent intent = new Intent(ForgotPasswordActivity.this, Login.class);
                                     startActivity(intent);
                                     finish();

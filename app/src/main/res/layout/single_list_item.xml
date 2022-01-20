@@ -5,29 +5,13 @@
     android:layout_height="match_parent"
     android:padding="8dp">
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/image_colocataire"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_gravity="center"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="5dp"
-        android:src="@drawable/profil1"
-        app:civ_border_color="#FF000000"
-        app:civ_border_width="2dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/nom_colocataire"
-        android:layout_width="match_parent"
+        android:layout_width="168dp"
         android:layout_height="wrap_content"
 
-        android:layout_alignBottom="@+id/image_colocataire"
+
         android:layout_alignParentTop="true"
         android:layout_marginStart="16dp"
 
@@ -35,8 +19,25 @@
         android:layout_marginEnd="8dp"
 
         android:layout_marginBottom="15dp"
-        android:layout_toEndOf="@+id/image_colocataire"
+
         android:text="Nom de colocataire"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/prenom_colocataire"
+        android:layout_width="199dp"
+        android:layout_height="36dp"
+
+
+        android:layout_alignTop="@+id/nom_colocataire"
+        android:layout_alignBottom="@+id/nom_colocataire"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="-5dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="-7dp"
+        android:layout_toEndOf="@+id/nom_colocataire"
+        android:text="Preom de colocataire"
         android:textSize="18dp" />
 
 
