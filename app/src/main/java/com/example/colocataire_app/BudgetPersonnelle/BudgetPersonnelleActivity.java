@@ -3,6 +3,8 @@ package com.example.colocataire_app.BudgetPersonnelle;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -15,57 +17,34 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.example.colocataire_app.R;
+import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
+/*
+ * @author  : Mouad ahatour
+ * @Title   : Application
+ */
 
 
 
 public class BudgetPersonnelleActivity extends AppCompatActivity {
-    protected ArrayList<Product> products;
-    private ArrayAdapter adapter;
-
-    private static final int APPEL_ACTIV2 = 1;
+     RecyclerView recyclerView;
+     MainAdapter mainAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_budget_personnelle);
+     recyclerView=(RecyclerView)findViewById(R.id.rv);
+     recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-
-        MyApplication context = (MyApplication) this.getApplicationContext();
-        products = context.getProducts();
-        adapter = new ProductAdapter(this,products);
-
-
-
-        ListView lv = (ListView)findViewById(R.id.listView);
-        lv.setAdapter(adapter);
-
-        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent(BudgetPersonnelleActivity.this, EditActivity.class);
-                intent.putExtra("id", position);
-                startActivityForResult(intent,APPEL_ACTIV2);
-            }
-        });
-        Button btn = (Button)findViewById(R.id.addButton);
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(BudgetPersonnelleActivity.this, EditActivity.class);
-                startActivityForResult(intent,APPEL_ACTIV2);
-            }
-        });
-
-    }
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        if(resultCode == Activity.RESULT_OK) {
-            adapter.notifyDataSetChanged();
-        } else if(resultCode == Activity.RESULT_CANCELED) {}
-        else {Toast.makeText(this, "Something's wrong !", Toast.LENGTH_SHORT).show(); }
+        FirebaseRecyclerOptions<MainModel> options =
+                new FirebaseRecyclerOptions.Builder<MainModel>()
+                        .setQuery(FirebaseDatabase.getInstance().getReference().child("budget"), MainModel.class)
+                        .build();
+        mainAdapter= new MainAdapter(options);
+        recyclerView.setAdapter(mainAdapter);
     }
 }
+
