@@ -46,5 +46,17 @@ public class BudgetPersonnelleActivity extends AppCompatActivity {
         mainAdapter= new MainAdapter(options);
         recyclerView.setAdapter(mainAdapter);
     }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        mainAdapter.startListening();
+    }
+    @Override
+    protected void onStop() {
+        super.onStop();
+        mainAdapter.startListening();
+    }
+
 }
 
