@@ -16,6 +16,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.example.colocataire_app.BudgetPersonnelle.BudgetPersonnelleActivity;
+import com.example.colocataire_app.BudgetPersonnelle.MainAdapter;
 import com.example.colocataire_app.Login;
 import com.example.colocataire_app.R;
 import com.example.colocataire_app.UserData;
