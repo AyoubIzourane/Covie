@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginBottom="40dp"
     tools:context=".Home.MainActivity">
     <View
         android:id="@+id/viewup"
@@ -95,6 +104,20 @@
 
 
     <ImageButton
+        android:id="@+id/btn_ajouter_colocataire"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:padding="10dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_text_ajouter_colocataire"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/edit_text_ajouter_colocataire"
+        app:layout_constraintTop_toTopOf="@+id/edit_text_ajouter_colocataire"
+        app:srcCompat="@drawable/ic_baseline_person_add_24" />
+
+    <ImageButton
         android:id="@+id/budget_group"
         android:layout_width="160dp"
         android:layout_height="160dp"
@@ -121,18 +144,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ListLabel"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_ajouter_colocataire"
         app:layout_constraintVertical_bias="0.0" />
 
-    <TextView
-        android:id="@+id/ListLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="28dp"
-        android:text="Liste des colocataires"
-        android:textColor="@color/white"
-        android:textSize="22dp"
+    <EditText
+        android:id="@+id/edit_text_ajouter_colocataire"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:backgroundTint="#A3ABBC"
+        android:ems="10"
+        android:inputType="textWebEmailAddress"
+        android:hint="Adresse email"
+        android:paddingStart="20dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint=" #A3ABBC"
+        android:textSize="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.081"
         app:layout_constraintStart_toStartOf="parent"
@@ -231,3 +258,4 @@
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
