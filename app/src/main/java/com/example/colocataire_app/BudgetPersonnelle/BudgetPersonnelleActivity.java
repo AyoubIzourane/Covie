@@ -22,8 +22,7 @@ import com.google.firebase.database.FirebaseDatabase;
 public class BudgetPersonnelleActivity  extends AppCompatActivity {
 
     private RecyclerView recyclerView;
-    com.example.colocataire_app.BudgetPersonnelle.personAdapter
-            adapter; // Create Object of the Adapter class
+    personAdapter adapter; // Create Object of the Adapter class
     DatabaseReference mbase; // Create object of the
     // Firebase Realtime Database
 
@@ -35,7 +34,7 @@ public class BudgetPersonnelleActivity  extends AppCompatActivity {
 
         // Create a instance of the database and get
         // its reference
-        mbase = FirebaseDatabase.getInstance().getReference();
+        mbase = FirebaseDatabase.getInstance().getReference("BudgetPerso");
 
         recyclerView = findViewById(R.id.recycler1);
 
@@ -62,7 +61,7 @@ public class BudgetPersonnelleActivity  extends AppCompatActivity {
     }
 
     // Function to tell the app to stop getting
-    // data from database on stopping of the activity
+    //data from database on stopping of the activity
     @Override protected void onStop()
     {
         super.onStop();
