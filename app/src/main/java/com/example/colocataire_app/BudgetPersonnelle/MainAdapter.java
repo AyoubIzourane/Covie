@@ -10,6 +10,9 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.List;
+
 import de.hdodenhof.circleimageview.CircleImageView;
 public class  MainAdapter extends FirebaseRecyclerAdapter<MainModel,MainAdapter.myViewHolder> {
 
@@ -19,7 +22,9 @@ public class  MainAdapter extends FirebaseRecyclerAdapter<MainModel,MainAdapter.
      *
      * @param options
      */
-    public MainAdapter(@NonNull FirebaseRecyclerOptions<MainModel> options) {
+
+
+    public MainAdapter(FirebaseRecyclerOptions<MainModel> options) {
         super(options);
     }
 

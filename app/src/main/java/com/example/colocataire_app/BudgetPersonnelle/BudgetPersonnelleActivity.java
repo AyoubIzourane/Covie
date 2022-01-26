@@ -18,6 +18,7 @@ import android.widget.Toast;
 
 import com.example.colocataire_app.R;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
@@ -29,15 +30,17 @@ import java.util.ArrayList;
 
 
 public class BudgetPersonnelleActivity extends AppCompatActivity {
-     RecyclerView recyclerView;
-     MainAdapter mainAdapter;
+    RecyclerView recyclerView;
+    MainAdapter mainAdapter;
+    FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_budget_personnelle);
-     recyclerView=(RecyclerView)findViewById(R.id.rv);
-     recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        mAuth= FirebaseAuth.getInstance();
+        recyclerView=(RecyclerView)findViewById(R.id.rv);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         FirebaseRecyclerOptions<MainModel> options =
                 new FirebaseRecyclerOptions.Builder<MainModel>()
@@ -52,11 +55,11 @@ public class BudgetPersonnelleActivity extends AppCompatActivity {
         super.onStart();
         mainAdapter.startListening();
     }
+
     @Override
     protected void onStop() {
         super.onStop();
         mainAdapter.startListening();
     }
-
 }
 
