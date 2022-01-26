@@ -42,4 +42,13 @@ public class Person {
     {
         this.prix= prix;
     }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "Home='" + Home + '\'' +
+                ", date='" + date + '\'' +
+                ", prix='" + prix + '\'' +
+                '}';
+    }
 }

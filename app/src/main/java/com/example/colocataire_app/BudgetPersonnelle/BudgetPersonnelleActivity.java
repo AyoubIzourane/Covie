@@ -35,7 +35,7 @@ public class BudgetPersonnelleActivity  extends AppCompatActivity {
 
         // Create a instance of the database and get
         // its reference
-        mbase = FirebaseDatabase.getInstance().getReference();
+        mbase = FirebaseDatabase.getInstance().getReference("BudgetPerso");
 
         recyclerView = findViewById(R.id.recycler1);
 
