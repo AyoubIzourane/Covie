@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BudgetGroupe.NewActivity">
+
+    <View
+        android:id="@+id/viewup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/theme"
+        android:paddingStart="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="242dp"
+        android:layout_height="136dp"
+        app:layout_constraintBottom_toTopOf="@+id/nom_activite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.443"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.128"
+        app:srcCompat="@drawable/imageonline_co_whitebackgroundremoved__9___1_" />
+
+
+    <EditText
+        android:id="@+id/nom_activite"
+        android:layout_width="337dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="#A3ABBC"
+        android:ems="10"
+        android:hint="Nom activité "
+        android:paddingStart="15dp"
+        android:paddingBottom="16dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint=" #A3ABBC"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/nbr_participant"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/nbr_participant"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="38dp"
+        android:backgroundTint="#A3ABBC"
+        android:inputType="number"
+        android:ems="10"
+        android:hint="Nombre participants"
+        android:paddingStart="15dp"
+        android:paddingBottom="16dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint=" #A3ABBC"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.382"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/budget_activity"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#A3ABBC"
+        android:ems="10"
+        android:hint="Budget"
+        android:inputType="numberDecimal"
+        android:paddingStart="15dp"
+        android:paddingBottom="16dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint=" #A3ABBC"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/nbr_participant"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/nbr_participant"
+        app:layout_constraintTop_toBottomOf="@+id/nbr_participant" />
+
+    <Button
+        android:id="@+id/button_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner"
+        android:text="Select date"
+        app:layout_constraintBottom_toTopOf="@+id/ajouter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.304"
+        app:layout_constraintStart_toEndOf="@+id/datepicker"
+        app:layout_constraintTop_toBottomOf="@+id/budget_activity"
+        app:layout_constraintVertical_bias="0.217" />
+
+    <TextView
+        android:id="@+id/datepicker"
+        android:layout_width="217dp"
+        android:layout_height="40dp"
+        android:paddingLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:editable="false"
+        android:backgroundTint="#A3ABBC"
+        android:ems="10"
+        android:hint="date activité"
+        android:inputType="date"
+
+        android:paddingBottom="16dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint=" #A3ABBC"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/nbr_participant"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/nbr_participant"
+        app:layout_constraintTop_toBottomOf="@+id/budget_activity"
+
+        tools:ignore="Deprecated" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="55dp"
+        android:background="@drawable/rounded_corner"
+        android:text="Retour"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/viewup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ajouter"
+        app:layout_constraintVertical_bias="0.211"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/ajouter"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="55dp"
+        android:background="@drawable/rounded_corner"
+        android:text="Enregistrer"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/datepicker"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/checkBox_isSpinnerMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Spinner mode"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/ajouter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.215"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
