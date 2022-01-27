@@ -5,10 +5,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
+import com.example.colocataire_app.Home.MainActivity;
 import com.example.colocataire_app.R;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -25,7 +29,7 @@ public class BudgetPersonnelleActivity  extends AppCompatActivity {
     personAdapter adapter; // Create Object of the Adapter class
     DatabaseReference mbase; // Create object of the
     // Firebase Realtime Database
-
+    FloatingActionButton floatingActionButton,floatingActionButton2;  // button ajouter budget
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -50,6 +54,22 @@ public class BudgetPersonnelleActivity  extends AppCompatActivity {
         adapter = new com.example.colocataire_app.BudgetPersonnelle.personAdapter(options);
         // Connecting Adapter class with the Recycler view*/
         recyclerView.setAdapter(adapter);
+        floatingActionButton=(FloatingActionButton)findViewById(R.id.floatingActionButton2);
+        floatingActionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),AjouterActivity.class));
+
+            }
+        });
+        floatingActionButton2=(FloatingActionButton)findViewById(R.id.floatingActionButton3);
+        floatingActionButton2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), MainActivity.class));
+
+            }
+        });
     }
 
     // Function to tell the app to start getting
