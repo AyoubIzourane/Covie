@@ -7,11 +7,11 @@ public class Person {
 
     // Variable to store data corresponding
     // to lastname keyword in database
-    private String date;
+    private String Date;
 
     // Variable to store data corresponding
     // to age keyword in database
-    private String prix;
+    private String Prix;
 
     // Mandatory empty constructor
     // for use of FirebaseUI
@@ -28,27 +28,27 @@ public class Person {
     }
     public String getDate()
     {
-        return date;
+        return Date;
     }
-    public void setDate(String date)
+    public void setDate(String Date)
     {
-        this.date = date;
+        this.Date = Date;
     }
     public String getPrix()
     {
-        return prix;
+        return Prix;
     }
-    public void setPrix(String prix)
+    public void setPrix(String Prix)
     {
-        this.prix= prix;
+        this.Prix= Prix;
     }
 
     @Override
     public String toString() {
         return "Person{" +
                 "Home='" + Home + '\'' +
-                ", date='" + date + '\'' +
-                ", prix='" + prix + '\'' +
+                ", date='" + Date + '\'' +
+                ", prix='" + Prix + '\'' +
                 '}';
     }
 }

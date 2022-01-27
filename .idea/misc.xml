@@ -3,6 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/M-A/AndroidStudioProjects/Covie/app/src/main/res/drawable/rounded_corner.xml" value="0.17037037037037037" />
+        <entry key="..\:/Users/M-A/AndroidStudioProjects/Covie/app/src/main/res/layout/activity_budget_personnelle.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/M-A/AndroidStudioProjects/Covie/app/src/main/res/layout/activity_edit.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/M-A/AndroidStudioProjects/Covie/app/src/main/res/layout/activity_login.xml" value="0.171875" />
+        <entry key="..\:/Users/M-A/AndroidStudioProjects/Covie/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/M-A/AndroidStudioProjects/Covie/app/src/main/res/layout/item.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/M-A/AndroidStudioProjects/Covie/app/src/main/res/layout/main_item.xml" value="0.12307692307692308" />
+        <entry key="..\:/Users/M-A/AndroidStudioProjects/Covie/app/src/main/res/layout/single_list_item.xml" value="0.17083333333333334" />
         <entry key="..\:/Users/ayoub/AndroidStudioProjects/colocataire_app/app/src/main/res/drawable/ic_baseline_attach_money_24.xml" value="0.24114583333333334" />
         <entry key="..\:/Users/ayoub/AndroidStudioProjects/colocataire_app/app/src/main/res/drawable/ic_baseline_group_24.xml" value="0.24114583333333334" />
         <entry key="..\:/Users/ayoub/AndroidStudioProjects/colocataire_app/app/src/main/res/drawable/ic_baseline_list_alt_24.xml" value="0.24114583333333334" />
@@ -12,12 +20,12 @@
         <entry key="..\:/Users/ayoub/AndroidStudioProjects/colocataire_app/app/src/main/res/drawable/ic_launcher_background.xml" value="0.24114583333333334" />
         <entry key="..\:/Users/ayoub/AndroidStudioProjects/colocataire_app/app/src/main/res/drawable/ic_menu_camera.xml" value="0.24114583333333334" />
         <entry key="..\:/Users/ayoub/AndroidStudioProjects/colocataire_app/app/src/main/res/drawable/ic_menu_slideshow.xml" value="0.24114583333333334" />
-        <entry key="..\:/Users/ayoub/AndroidStudioProjects/colocataire_app/app/src/main/res/layout/activity_budget_personnelle.xml" value="0.2" />
+        <entry key="..\:/Users/ayoub/AndroidStudioProjects/colocataire_app/app/src/main/res/layout/activity_budget_personnelle.xml" value="0.225" />
         <entry key="..\:/Users/ayoub/AndroidStudioProjects/colocataire_app/app/src/main/res/layout/activity_dashboard.xml" value="0.225" />
         <entry key="..\:/Users/ayoub/AndroidStudioProjects/colocataire_app/app/src/main/res/layout/activity_edit.xml" value="0.225" />
         <entry key="..\:/Users/ayoub/AndroidStudioProjects/colocataire_app/app/src/main/res/layout/activity_forgot_password.xml" value="0.22083333333333333" />
         <entry key="..\:/Users/ayoub/AndroidStudioProjects/colocataire_app/app/src/main/res/layout/activity_login.xml" value="0.22083333333333333" />
-        <entry key="..\:/Users/ayoub/AndroidStudioProjects/colocataire_app/app/src/main/res/layout/activity_main.xml" value="0.14" />
+        <entry key="..\:/Users/ayoub/AndroidStudioProjects/colocataire_app/app/src/main/res/layout/activity_main.xml" value="0.23043478260869565" />
         <entry key="..\:/Users/ayoub/AndroidStudioProjects/colocataire_app/app/src/main/res/layout/activity_new_account.xml" value="0.22291666666666668" />
         <entry key="..\:/Users/ayoub/AndroidStudioProjects/colocataire_app/app/src/main/res/layout/app_bar_dashboard.xml" value="0.225" />
         <entry key="..\:/Users/ayoub/AndroidStudioProjects/colocataire_app/app/src/main/res/layout/content_dashboard.xml" value="0.225" />
@@ -25,12 +33,18 @@
         <entry key="..\:/Users/ayoub/AndroidStudioProjects/colocataire_app/app/src/main/res/layout/fragment_home.xml" value="0.225" />
         <entry key="..\:/Users/ayoub/AndroidStudioProjects/colocataire_app/app/src/main/res/layout/fragment_slideshow.xml" value="0.225" />
         <entry key="..\:/Users/ayoub/AndroidStudioProjects/colocataire_app/app/src/main/res/layout/item.xml" value="0.225" />
-        <entry key="..\:/Users/ayoub/AndroidStudioProjects/colocataire_app/app/src/main/res/layout/main_item.xml" value="1.1" />
         <entry key="..\:/Users/ayoub/AndroidStudioProjects/colocataire_app/app/src/main/res/layout/nav_header_dashboard.xml" value="0.225" />
-        <entry key="..\:/Users/ayoub/AndroidStudioProjects/colocataire_app/app/src/main/res/layout/person.xml" value="0.22083333333333333" />
         <entry key="..\:/Users/ayoub/AndroidStudioProjects/colocataire_app/app/src/main/res/layout/single_list_item.xml" value="0.21" />
         <entry key="..\:/Users/ayoub/AndroidStudioProjects/colocataire_app/app/src/main/res/menu/activity_main_drawer.xml" value="0.225" />
         <entry key="..\:/Users/ayoub/AndroidStudioProjects/colocataire_app/app/src/main/res/menu/dashboard.xml" value="0.21" />
+        <entry key="..\:/Users/mouad/AndroidStudioProjects/Covie-master/app/src/main/res/drawable/rounded.xml" value="0.22" />
+        <entry key="..\:/Users/mouad/AndroidStudioProjects/Covie-master/app/src/main/res/layout/activity_budget_personnelle.xml" value="0.14221014492753623" />
+        <entry key="..\:/Users/mouad/AndroidStudioProjects/Covie-master/app/src/main/res/layout/item.xml" value="0.14221014492753623" />
+        <entry key="..\:/Users/mouad/AndroidStudioProjects/Covie-master/app/src/main/res/layout/main_item.xml" value="0.22" />
+        <entry key="..\:/Users/mouad/AndroidStudioProjects/Covie-master/app/src/main/res/layout/person.xml" value="0.1" />
+        <entry key="..\:/Users/mouad/AndroidStudioProjects/Covie-master/app/src/main/res/layout/rounded.xml" value="0.1641337386018237" />
+        <entry key="..\:/Users/mouad/AndroidStudioProjects/Covie-master/app/src/main/res/layout/single_list_item.xml" value="0.1641337386018237" />
+        <entry key="..\:/Users/mouad/AndroidStudioProjects/Covie-master/app/src/main/res/layout/update_popup.xml" value="0.1641337386018237" />
       </map>
     </option>
   </component>
