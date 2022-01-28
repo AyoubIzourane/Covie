@@ -7,9 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginBottom="40dp"
@@ -80,12 +78,10 @@
         android:background="@drawable/border_shadow"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.94"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/username"
-        app:layout_constraintVertical_bias="0.032"
+        app:layout_constraintVertical_bias="0.028"
         tools:ignore="MissingConstraints" />
-
 
     <ImageButton
         android:id="@+id/budget_personnelle"
@@ -166,13 +162,19 @@
         app:layout_constraintTop_toBottomOf="@+id/budget_personnelle"
         tools:ignore="MissingConstraints" />
 
-    <TextView
+    <EditText
         android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="1000 MAD"
-        android:textColor="#33435D"
-        android:textSize="28dp"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:backgroundTint="#A3ABBC"
+        android:ems="10"
+
+        android:hint="Entrer ton budget"
+        android:paddingStart="20dp"
+        android:textColor="@color/black"
+        android:textColorHint=" #A3ABBC"
+        android:textSize="16dp"
         app:layout_constraintBottom_toBottomOf="@+id/view6"
         app:layout_constraintEnd_toEndOf="@+id/view6"
         app:layout_constraintHorizontal_bias="0.131"
@@ -180,11 +182,27 @@
         app:layout_constraintTop_toTopOf="@+id/view6"
         app:layout_constraintVertical_bias="0.239" />
 
+    <ImageButton
+        android:id="@+id/addBudget"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:padding="10dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="@+id/view6"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="@+id/textView4"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_baseline_attach_money_24" />
+
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="480 MAD"
+        android:text="0"
         android:textColor="#33435D"
         android:textSize="22dp"
         app:layout_constraintBottom_toBottomOf="@+id/view6"
@@ -198,7 +216,7 @@
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="520 MAD"
+        android:text="0"
         android:textColor="#33435D"
         android:textSize="22dp"
         app:layout_constraintBottom_toBottomOf="@+id/view6"
@@ -249,10 +267,6 @@
         app:layout_constraintStart_toEndOf="@+id/textView6"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
         app:layout_constraintVertical_bias="0.356" />
-
-
-
-
 
 
 

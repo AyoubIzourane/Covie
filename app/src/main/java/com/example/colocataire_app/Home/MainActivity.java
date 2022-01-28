@@ -20,6 +20,7 @@ import android.widget.Toast;
 
 import com.example.colocataire_app.BudgetPersonnelle.BudgetPersonnelleActivity;
 
+import com.example.colocataire_app.BudgetPersonnelle.TotalBudgetClass;
 import com.example.colocataire_app.Login;
 import com.example.colocataire_app.NewAccount;
 import com.example.colocataire_app.R;
@@ -32,6 +33,8 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+
+import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -55,6 +58,31 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //Budget's Dashboard
+        //Label Depense
+        TextView total = findViewById(R.id.textView8);
+        total.setText(TotalBudgetClass.TotalBudget);
+
+        //Label Rest
+        TextView rest = (TextView)findViewById(R.id.textView9);
+
+        //Label Mon Budget
+        ImageButton addBudget = (ImageButton) findViewById(R.id.addBudget);
+        addBudget.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                EditText affichageBudgetEditTxt = findViewById(R.id.textView4);
+                String affichageBudget = affichageBudgetEditTxt.getText().toString();
+
+                int a,b,result;
+                a = Integer.parseInt(TotalBudgetClass.TotalBudget);
+                b = Integer.parseInt(affichageBudget);
+                result = b-a;
+                String resultLabel = String.valueOf(result);
+                rest.setText(resultLabel);
+            }
+        });
 
         //data base
 

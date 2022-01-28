@@ -1,6 +1,7 @@
 package com.example.colocataire_app.BudgetPersonnelle;
 
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -8,14 +9,25 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
+import com.example.colocataire_app.Home.ListAdapter;
 import com.example.colocataire_app.Home.MainActivity;
 import com.example.colocataire_app.R;
+import com.example.colocataire_app.UserData;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.Objects;
 /*
  * @author  : Mouad ahatour
  * @Title   : Application
@@ -70,6 +82,29 @@ public class BudgetPersonnelleActivity  extends AppCompatActivity {
 
             }
         });
+
+
+        DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference().child("BudgetPerso");
+        databaseReference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                int sum =0;
+                for(DataSnapshot ds : snapshot.getChildren()){
+                    Map<String, Objects> map = (Map<String, Objects>) ds.getValue();
+                    Object budget =map.get("Prix");
+                    int pValue = Integer.parseInt(String.valueOf(budget));
+                    sum+=pValue;
+                    String afficherTotalBudget = String.valueOf(sum);
+                    TotalBudgetClass.TotalBudget = afficherTotalBudget;
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
     }
 
     // Function to tell the app to start getting
